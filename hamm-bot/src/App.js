@@ -5,15 +5,26 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = async (e) => {
     e.preventDefault();
     if (inputMessage.trim() !== '') {
       setMessages([...messages, { text: inputMessage, sender: 'user' }]);
       setInputMessage('');
-      // Here you would typically call a function to get HammBot's response
-      setTimeout(() => {
-        setMessages(prevMessages => [...prevMessages, { text: "HammBot's funny response goes here", sender: 'bot' }]);
-      }, 1000);
+      
+      try {
+        const response = await fetch('http://localhost:3001/api/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ message: inputMessage }),
+        });
+        
+        const data = await response.json();
+        setMessages(prevMessages => [...prevMessages, { text: data.reply, sender: 'bot' }]);
+      } catch (error) {
+        console.error('Error:', error);
+      }
     }
   };
 
@@ -46,4 +57,3 @@ function App() {
 }
 
 export default App;
-
