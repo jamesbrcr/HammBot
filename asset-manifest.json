@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/HammBot/static/css/main.09575263.css",
-    "main.js": "/HammBot/static/js/main.071fe4b1.js",
+    "main.js": "/HammBot/static/js/main.0b218a73.js",
     "static/js/488.c176cdc0.chunk.js": "/HammBot/static/js/488.c176cdc0.chunk.js",
     "index.html": "/HammBot/index.html",
     "main.09575263.css.map": "/HammBot/static/css/main.09575263.css.map",
-    "main.071fe4b1.js.map": "/HammBot/static/js/main.071fe4b1.js.map",
+    "main.0b218a73.js.map": "/HammBot/static/js/main.0b218a73.js.map",
     "488.c176cdc0.chunk.js.map": "/HammBot/static/js/488.c176cdc0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09575263.css",
-    "static/js/main.071fe4b1.js"
+    "static/js/main.0b218a73.js"
   ]
 }
