@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HammBot/static/css/main.f855e6bc.css",
+    "main.js": "/HammBot/static/js/main.e6e57b7e.js",
+    "static/js/488.c176cdc0.chunk.js": "/HammBot/static/js/488.c176cdc0.chunk.js",
+    "static/media/logo.svg": "/HammBot/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/HammBot/index.html",
+    "main.f855e6bc.css.map": "/HammBot/static/css/main.f855e6bc.css.map",
+    "main.e6e57b7e.js.map": "/HammBot/static/js/main.e6e57b7e.js.map",
+    "488.c176cdc0.chunk.js.map": "/HammBot/static/js/488.c176cdc0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.e6e57b7e.js"
+  ]
+}
